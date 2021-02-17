@@ -1,0 +1,91 @@
+.parent{
+   display: flex;
+   flex-direction: row;
+}
+.child-1{
+     border:1px solid#ddd;
+     margin:1%;
+     padding:1%;
+     box-shadow: 6px 10px 9px 6px;
+}
+.child-2{
+     border:1px solid#ddd;
+     margin:1%;
+     padding:1%;
+     box-shadow: 9px 8px 9px 1px;
+}
+.child-1>img{
+    width: 50%;
+    display:block;
+    margin:0 auto 0 auto;
+}
+a{
+    word-wrap: break-word;
+    text-decoration: none;
+}
+h3{
+    color: #33eCff;
+}
+table{
+    width: 100%; 
+    margin: 1%;
+    border: 1px solid #ddd;  
+}
+table thead{
+   background: #ddd;
+}
+table tr  th{
+    padding: 1%;
+}
+tbody tr:nth-child(even){
+    background: #ddd;
+}
+tbody tr td{
+    padding :1%;
+}
+/*Mobile Devices*/
+@media only screen and (min-width: 320px) and (max-width: 767px)
+{
+    .parent{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+    .child-1{
+     border:1px solid#ddd;
+     margin:1%;
+     padding:1%;
+     box-shadow: 6px 10px 9px 6px;
+     width: 90%;
+}
+.child-2{
+     border:1px solid#ddd;
+     margin:1%;
+     padding:1%;
+     box-shadow: 9px 8px 9px 1px;
+     width: 90%;
+}
+}
+/*Tab Devices*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .parent{
+   display: flex;
+   flex-direction: row;
+}
+.child-1{
+     border:1px solid#ddd;
+     margin:1%;
+     padding:1%;
+     box-shadow: 6px 10px 9px 6px;
+     width: 45%;
+     background: skyblue;
+}
+.child-2{
+     border:1px solid#ddd;
+     margin:1%;
+     padding:1%;
+     box-shadow: 9px 8px 9px 1px;
+     width: 45%; 
+     background: skyblue;
+}
+}
